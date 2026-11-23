@@ -1,8 +1,8 @@
+
 import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { AppController } from './app.controller.js';
-import { AppService } from './app.service.js';
+
 import { UsuariosModule } from './usuarios/usuarios.module.js';
 import { EquiposModule } from './equipos/equipos.module.js';
 import { TorneosModule } from './torneos/torneos.module.js';
@@ -31,18 +31,11 @@ import { ResultadosModule } from './resultados/resultados.module.js';
     }),
 
     UsuariosModule,
-
     EquiposModule,
-
     TorneosModule,
-
     InscripcionesModule,
-
     PartidosModule,
-
     ResultadosModule,
   ],
-  controllers: [AppController],
-  providers: [AppService],
 })
 export class AppModule {}
