@@ -10,6 +10,6 @@ import { Torneo } from './entities/torneo.entity.js';
   imports: [TypeOrmModule.forFeature([Torneo])],
   controllers: [TorneosController],
   providers: [TorneosService],
-  exports: [TypeOrmModule],
+    exports: [TypeOrmModule, TorneosService],
 })
 export class TorneosModule {}
